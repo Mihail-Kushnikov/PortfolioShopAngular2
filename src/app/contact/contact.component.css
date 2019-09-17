@@ -1,0 +1,108 @@
+img{
+    object-fit: cover;
+}
+h1{
+    position: relative;
+    text-align: center;
+    top: -150px;
+    font-weight: bold;
+    color: #333333;
+    font-size: 48px;
+    line-height: 48px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact>div>p{
+    margin-top: 40px;
+    margin-left: 50px;
+
+}
+mat-icon{
+    margin-top: 40px;
+    position: relative;
+    left: 146px;
+}
+.contact>div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f63440;
+    
+}
+.map{
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+    width: 81.25vw;
+    overflow: hidden;
+}
+.messages{
+    position: relative;
+    top: 70px;
+    border: none;
+}
+.border{
+    width: 50px;
+    height: 2px;
+    background: #f63440;
+    margin: 0 auto;
+    position: relative;
+    top: 82px;
+}
+
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+form{
+    widows: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 140px;
+}
+form>div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #6e6e6e;
+    margin-bottom: 40px;
+    text-align: center;
+    outline:none;
+    padding-bottom: 10px;
+}
+input:focus{
+    border-bottom: 1px solid #f63440;
+    transition: all .5s
+}
+textarea{
+    border: none;
+    border-bottom: 1px solid #6e6e6e;
+    text-align: center;
+    outline: none;
+}
+textarea:focus{
+    border-bottom: 1px solid #f63440;
+    transition: all .5s
+}
+button{
+    width: 150px;
+    margin-top: 40px;
+    background: #f63440;
+    color: white;
+    font-weight: bold;
+}

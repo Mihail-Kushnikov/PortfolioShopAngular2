@@ -1,0 +1,45 @@
+
+img{
+    filter: brightness(40%);
+    object-fit: cover;
+    height: 857px;
+}
+
+.text{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: -477px;
+    color: #ffffff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-size: 24px;
+    
+}
+h1{
+    font-size: 72px;
+    line-height: 90px;
+    font-weight: 500;
+}
+button{
+    margin-right: 20px; 
+    margin-top: 60px;
+}
+button:hover{
+    background: #f63440;
+}
+footer{
+    top: 0;
+}
+
+/* @media screen and (max-width: 800px){
+    img {
+        object-fit: cover;
+        height: 385px;
+    }
+} */

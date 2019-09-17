@@ -1,0 +1,89 @@
+section{
+    margin: 0;
+    background-size: cover;
+    position: relative;
+    top: 98px;
+    box-sizing: border-box;
+    animation: zoomIn 0.8s
+}
+#s1>.bg__text{
+    color: beige;
+    right: 0;
+    left: 50px;
+}
+.bg__text{
+    
+    width: 450px;
+    position: absolute;
+    right: 50px;
+    display: flex;
+    top: 10vw;
+    flex-direction: column;
+    animation: fadeInDown 1.5s;
+
+}
+.bg__text>p{
+    text-align: center
+}
+.bg__text>p:nth-child(1){
+    font-size: 21px;
+}
+.bg__text>p:nth-child(2){
+    font-size: 112px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.bg__text>p:nth-child(3){
+    font-size: 59px;
+    
+}
+.bg__text>button{
+    width: 150px;
+    margin: 0 auto;
+    background: #f63440; 
+}
+
+.display {
+    display: none;
+}
+
+.bg__radiobtn{
+    width: 57px;
+    position: relative;
+    top: -51px;
+    margin: 0 auto;
+}
+
+
+
+
+@keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .zoomIn {
+    animation-name: zoomIn;
+  }

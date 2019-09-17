@@ -1,0 +1,9 @@
+<section >
+    <div *ngFor="let catalog of catalogs" id="{{catalog.id}}" >
+        
+    <img id="img" src="../../assets/images/catalog/imgbox-{{catalog.url}}" alt="{{catalog.alt}}" class="active">
+    <button mat-raised-button>{{catalog.name}}</button>
+    </div>
+
+
+</section>

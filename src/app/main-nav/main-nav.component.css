@@ -1,0 +1,53 @@
+
+
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    height: 90px;
+}
+
+nav>img{
+    position: absolute;
+    left: 50px;
+    top: 39px;
+}
+section{
+    position: absolute;
+    top: 39px;
+}
+section>button{
+    background: none;
+    border: 0; 
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 20px;
+}
+section>button:hover{
+    color: #f63440;
+    transition: 0.3s
+}
+
+section>button:active{
+    color: #f63440; 
+    outline: none;
+}
+section>button:focus{
+    outline: none;
+}
+.nav__icon{
+    position: absolute;
+    top: 39px;
+    right: 50px;
+}
+.nav__icon>a{
+   text-decoration: none;
+   color: black;
+   padding-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

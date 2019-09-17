@@ -1,0 +1,25 @@
+<!-- <section id="s1" [ngClass]="{ 'display':true}" >
+<img src="../../assets/images/bg/slider-bg-1.jpg" alt="" width="100%">
+<div class="bg__text">
+    <p>Summer fasion</p>
+    <p>sale</p>
+    <p>up to 30% off</p>
+    <button mat-raised-button>BY NOW</button>
+</div>
+</section> -->
+
+<section id="{{active.id}}" *ngFor="let active of activs" [ngClass]="{ 'display':active.activ}">
+<img src="../../assets/images/bg/slider-bg-{{active.url}}" alt="" width="100%">
+<div class="bg__text">
+    <p>Summer fasion</p>
+    <p>sale</p>
+    <p>up to 30% off</p>
+    <button mat-raised-button>BY NOW</button>
+</div>
+
+</section>
+<div class="bg__radiobtn">
+        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                <mat-button-toggle value="bold" (click)="toggle()">Bold</mat-button-toggle>
+        </mat-button-toggle-group>
+</div>

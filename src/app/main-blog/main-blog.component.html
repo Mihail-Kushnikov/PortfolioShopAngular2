@@ -1,0 +1,15 @@
+<section>
+    
+    <div class="blog__img">
+        <img src="../../assets/images/shop/bg-parallax1.jpg" alt="" width="100%" height="250px">
+        <h1>Blog</h1>
+    </div>
+    <div class="blog" id="bl1" *ngFor="let blog of blogs">
+        <h2>{{blog.blogName}}</h2>
+        <p>Posted by: <a href="#">{{blog.posted}}</a><span>{{blog.date}} | {{blog.comment}} comment</span></p>
+        <img src="../../assets/images/blog/{{blog.url}}" alt="" width="100%">
+        <div class="blog__text">{{blog.text}}</div>
+        <a href="">Read More <a class="blog__animation" href="">>>                        </a></a>
+    </div>
+    
+</section>

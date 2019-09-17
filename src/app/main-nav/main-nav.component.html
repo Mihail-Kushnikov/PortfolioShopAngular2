@@ -1,0 +1,63 @@
+<nav>
+    <img src="../../assets/images/nav/logo.png" alt="shop">
+    <section>
+    <button mat-button [matMenuTriggerFor]="home">HOME</button>
+        <mat-menu #home="matMenu">
+            <button mat-menu-item><a routerLink="/home" routerLinkActive="active"> Homepaga Style 1</a></button>
+            <button mat-menu-item>Homepaga Style 2</button>
+            <button mat-menu-item>Homepaga Style 3</button>
+            <button mat-menu-item>Homepaga Style 4</button>
+            <button mat-menu-item>Homepaga Style 5</button>
+            <button mat-menu-item>Homepaga Style 6</button>
+            <button mat-menu-item>Homepaga Style 7</button>
+            <button mat-menu-item>Homepaga Style 8</button>
+            <button mat-menu-item>Homepaga Style 9</button>
+        </mat-menu>
+    <button mat-button [matMenuTriggerFor]="shop">SHOP</button>
+        <mat-menu #shop="matMenu">
+            <button mat-menu-item><a routerLink="/shop" routerLinkActive="active">Shop Page One</a></button>
+            <button mat-menu-item [matMenuTriggerFor]="layots">Shop Layots</button>
+            <button mat-menu-item [matMenuTriggerFor]="detalis">Shop Detalis</button>
+        </mat-menu>
+        <mat-menu #detalis="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+            <button mat-menu-item>Item 6</button>
+
+        </mat-menu>    
+        <mat-menu #layots="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+            <button mat-menu-item>Item 3</button>
+            <button mat-menu-item>Item 4</button>
+            <button mat-menu-item>Item 5</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="page">PAGE</button>
+        <mat-menu #page="matMenu">
+            <button mat-menu-item><a routerLink="/page" routerLinkActive="active">Coming soon</a></button>
+            <button mat-menu-item>ERROR 404</button>
+            <button mat-menu-item>FAQs</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="blog">BLOG</button>
+        <mat-menu #blog="matMenu">
+            <button mat-menu-item><a routerLink="/blog" routerLinkActive="active">Blog 1</a></button>
+            <button mat-menu-item>Blog 2</button>
+            <button mat-menu-item>Blog 3</button>
+            <button mat-menu-item>Blog 4</button>
+            <button mat-menu-item>Blog 5</button>
+            <button mat-menu-item>Blog 6</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="contact">CONTACT</button>
+        <mat-menu #contact="matMenu">
+            <button mat-menu-item><a routerLink="/contacts" routerLinkActive="active">About us</a></button>
+        </mat-menu>
+    </section> 
+    <div class="nav__icon">
+        
+        <a href="#"><mat-icon>search</mat-icon></a>
+        <a href="#"><mat-icon matBadge="5" matBadgeColor="warn">shopping_cart</mat-icon></a>
+    </div> 
+</nav>
